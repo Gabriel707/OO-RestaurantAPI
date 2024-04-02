@@ -31,6 +31,3 @@ def get_restaurantes(restaurante: str = Query(None)):
         return {'Restaurante': restaurante, 'Cardapio': dados_restaurante}
     else:
         return {'Erro': f'{response.status_code} - {response.text}'}
-
-
-''
